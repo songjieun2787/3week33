@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>메트로놈 웹사이트</title>
+	<style type="text/css">
+
+@font-face {
+    font-family: 'Cafe24ProUp';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/Cafe24PROUP.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+    h1 {font-family: 'Cafe24ProUp'; font-weight: normal;}
+
+@font-face {
+    font-family: 'ImHyeMin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+    h2,h3,h4,section{font-family: 'ImHyeMin';}
+
+		h1 { font-size: 50px; margin-top: 100px; }
+		p { font-size: 14px; }
+
+    h2{margin-top: 40px;}
+    h2,h3,h4,p { font-size: 14px;}
+    h3 {margin-bottom: 50px;}
+		body {text-align: center; margin-top: 50px;}
+    h4{margin-top: 25px;margin-bottom: 50px;}
+    section {margin-bottom: 130px;}
+    button {margin: 5px;padding: 10px 15px;font-size: 16px;border-radius: 10px;border:  2px solid #343548;color: #343548; 
+
+    }
+    #bt1 {background-color: #5ED2CE;}
+    #bt2 {background-color: #EFB958;} 
+    #bt3 {background-color: #DB606D;} 
+    #bt4 {background-color: #DB606D;}
+    #bt5 {background-color: #EFB958;} 
+    #bt6 {background-color: #5ED2CE;} 
+
+body {text-align: center;margin-top: 50px;background-color: #B3DFFF; }
+
+#met {border-radius: 40px; margin-bottom: 110px; width: 500px;}
+
+	</style>
+
+</head>
+<body>
+
+ <h1>메트로놈-BPM</h1>
+
+
+  <audio id="Largo" src="tick40.mp3"></audio>
+  <audio id="Adagio" src="tick50.mp3"></audio>
+  <audio id="Andante" src="tick60.mp3"></audio>
+  <audio id="Moderato" src="tick100.mp3"></audio>
+  <audio id="Allegro" src="tick120.mp3"></audio>
+  <audio id="Presto" src="tick160.mp3"></audio>
+
+    <h2> BPM은 음악의 속도를 숫자로 나타낸 것으로 숫자가 클수록 박자가 빨라집니다. </h2>
+     <h3> 60bpm은 4분 음표 1박자가 1분에 1박을 의미합니다. </h3>
+
+
+  <div>
+    <button id="bt1">Largo</button>
+    <button id="bt2">Adagio</button>
+    <button id="bt3">Andante</button>
+    <button id="bt4">Moderato</button>
+    <button id="bt5">Allegro</button>
+    <button id="bt6">Presto</button>
+  </div>
+<h4> slow   ------------------------------------------------   fast </h4>
+  <img id="met"src="https://cdn.dribbble.com/userupload/21840574/file/original-926b9e1b9cf4a05b9b4e5a1aa0f63181.gif">
+  <section>
+  
+
+  	<p>• Largo –  Adagio 보다 느리게 (40~44)</p>
+  	<p>• Adagio – 아주 느리게 (44~52)</p>
+  	<p>•  Andante – 느리게 (52~60)</p>
+  	<p>•  Moderato – 보통 빠르기 (80~116)</p>
+  	<p>•  Allegro – 빠르게 (116~144)</p>
+  	<p>•  Presto – 아주 빠르게 (144~184)</p>
+
+  </section>
+<script>
+1
+	bPlay = false;
+bt1.onclick = function(){
+if(bPlay == true){
+Largo.pause();
+bPlay = false;
+}else{
+Largo.play();
+bPlay = true;}
+}
+
+2
+	bPlay2 = false;
+bt2.onclick = function(){
+if(bPlay2 == true){
+Adagio.pause();
+bPlay2 = false;
+}else{
+Adagio.play();
+bPlay2 = true;}
+}
+
+3
+	bPlay3 = false;
+bt3.onclick = function(){
+if(bPlay3 == true){
+Andante.pause();
+bPlay3 = false;
+}else{
+Andante.play();
+bPlay3 = true;}
+}
+
+4
+	bPlay4 = false;
+bt4.onclick = function(){
+if(bPlay4 == true){
+Moderato.pause();
+bPlay4 = false;
+}else{
+Moderato.play();
+bPlay4 = true;}
+}
+
+5
+	bPlay5 = false;
+bt5.onclick = function(){
+if(bPlay5 == true){
+Allegro.pause();
+bPlay5 = false;
+}else{
+Allegro.play();
+bPlay5 = true;}
+}
+
+6
+	bPlay6 = false;
+bt6.onclick = function(){
+if(bPlay6 == true){
+Presto.pause();
+bPlay6 = false;
+}else{
+Presto.play();
+bPlay6 = true;}
+}
+
+</script>
+</body>
+</html>
